@@ -31,7 +31,7 @@ function displayMenu(name) {
   }
 }
 
-// displayMenu(3);
+displayMenu(3);
 
 (function setSideMaxHeight() {
   var sideFront = document.getElementById('idSideFront');
