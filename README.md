@@ -1,3 +1,3 @@
-<h1>Site `Visit card`</h1>
+<h1>Site Portfolio</h1>
 
-Portfolio site based on React
+Demo: <code>https://linkmagic.github.io/visit-card</code>
