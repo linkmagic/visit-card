@@ -1,7 +1,6 @@
-function mobileMenuOnClick() {
-  var topNavMenu = document.getElementById('idTopNavMenu');
-  var menuBtn = document.getElementById('idTopNavMenuBtn');
-
-  topNavMenu.classList.toggle('responsive');
-  menuBtn.classList.toggle('change');
+function displayMenu() {
+  document.getElementById('idMenuHome').classList.toggle('IconHomeShow');
+  document.getElementById('idMenuContacts').classList.toggle('IconContactsShow');
+  document.getElementById('idMenuExperience').classList.toggle('IconExperienceShow');
+  document.getElementById('idMenuSelfProjects').classList.toggle('IconSelfProjectsShow');
 }

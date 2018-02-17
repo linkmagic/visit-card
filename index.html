@@ -4,35 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/main-menu.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main-menu.css">
+    <link rel="stylesheet" href="./css/social.css">
+
     <title>Yevhen Sapsai - Portfolio</title>
   </head>
   <body>
 
-    <!-- Menu -->
-    <!--
-    <div class="top-nav-menu" id="idTopNavMenu">
+    <div class="MainMenu">
 
-      <div class="m-header-title">
-        <span class="name">Yevhen&nbsp;Sapsai</span>
-        <span class="descr">Portfolio</span>
+      <div id="idMenuHome" class="MainMenu__Home">
+        <svg class="IconHome" fill="#FFFFFF" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
       </div>
 
-      <button class="TopNavMenu__Item TopNavMenu__Item-active" onclick="displayMenu(0)">Home</button>
-      <button class="TopNavMenu__Item" onclick="displayMenu(1)">Experience</button>
-      <button class="TopNavMenu__Item" onclick="displayMenu(2)">Self projects</button>
-      <button class="TopNavMenu__Item" onclick="displayMenu(3)">Contancs</button>
+      <div id="idMenuContacts" class="MainMenu__Contacts">
+        <svg class="IconContacts" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            <path d="M0 0h24v24H0z" fill="none"/>
+        </svg>
+      </div>
 
-      <button href="javascript:void(0);" class="TopNavMenu__Item TopNavMenu__Icon" onclick="mobileMenuOnClick()">
-        <div id="idTopNavMenuBtn" class="MenuBtnContainer">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </button>
+      <div id="idMenuExperience" class="MainMenu__Experience">
+        <svg class="IconExperience" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"/>
+        </svg>
+      </div>
+
+      <div id="idMenuSelfProjects" class="MainMenu__SelfProjects">
+        <svg class="IconSelfProjects" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z" fill="none"/>
+            <path d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"/>
+        </svg>
+      </div>
+
+      <div id="idMenuMenu" class="MainMenu__Menu" onclick="displayMenu()">
+        <svg class="IconMenu" fill="#FFFFFF" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </div>
+
     </div>
-    -->
+
+    <div>
+      <!-- Content -->
+    </div>
 
     <!-- HOME -->
 
@@ -79,37 +101,7 @@
     </a>
     -->
 
-    <div class="MainMenu">
-      
-    </div>
-
-    <div style="margin:76px 4px 4px 4px;text-align:justify;">
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-      <p style="font-size:24px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nobis neque, adipisci deleniti ea aliquid. Ipsam sunt perspiciatis obcaecati. Laborum, nulla sapiente itaque consequuntur asperiores velit debitis, unde. Quod, quis.
-      </p>
-    </div>
-
+    <script src="./js/Polyfill.ClassList.js"></script>
     <script src="./js/main.js"></script>
 
   </body>
