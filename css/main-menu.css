@@ -1,7 +1,11 @@
 .MainMenu {
-  margin: 5px 0 0 5px;
-  width: 100px;
-  height: 100px;
+  position: fixed;
+  margin: 8px;
+  top: 0px;
+  left: 0px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
-  border: 1px solid gray;
+  background-color: #009688;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
