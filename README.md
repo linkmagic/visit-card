@@ -1,3 +1,3 @@
 <h1>Site Portfolio</h1>
 
-Demo: <code>https://linkmagic.github.io/visit-card</code>
+<a href="https://linkmagic.github.io/visit-card/" target="_blank">Demo</a>
