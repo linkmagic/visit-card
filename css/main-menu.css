@@ -3,6 +3,7 @@
 }
 
 .MainMenu__Menu {
+  display: none;
   position: fixed;
   margin: 8px;
   top: 0px;
