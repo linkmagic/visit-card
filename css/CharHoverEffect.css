@@ -2,7 +2,7 @@
   will-change: transform;
   display: inline-block;
   position: relative;
-  color: #000000;
+  color: #E0E1E0;
   margin: 0 -2px;
   animation: animateCharOut 1s ease;
   animation-iteration-count: 1;
@@ -10,7 +10,6 @@
 }
 
 .CharHoverEffect:hover {
-  color: #ad00ff;
   cursor: default;
   animation: animateCharIn 1s ease;
   animation-iteration-count: 1;

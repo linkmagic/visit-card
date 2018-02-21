@@ -39,3 +39,9 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 370px) {
+	#typewriter {
+		font-size: 1.6rem;
+	}
+}

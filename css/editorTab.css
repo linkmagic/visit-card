@@ -4,7 +4,8 @@
 
 .editor {
   padding: 8px 0 32px 24px;
-  height: 32rem;
+  height: 26rem;
+  /*height: calc(100vh - 64px);*/
   background-color: #272821;
   color: white;
 }
@@ -36,6 +37,20 @@
   border-radius: 6px 6px 0 0;
 }
 
+.editorLines {
+  display: block;
+  float: left;
+  margin: 0 12px 0 -24px;
+  padding: 0 8px 0 16px;
+  border-right: 1px solid #33342D;
+}
+
+.editorLineNum {
+  display: block;
+  font-size: 2rem;
+  color: #535455;
+}
+
 .statusBarEditor {
   font-size: 1.2rem;
   color: #e3e3e3;
@@ -61,4 +76,13 @@
 .statusBarEditor__language,
 .statusBarEditor__lineEnd {
   float: right;
+}
+
+@media screen and (max-width: 425px) {
+  .tabsEditor {
+    margin-left: 0;
+  }
+  .tabs {
+    margin: 55px 0 0 0;
+  }
 }

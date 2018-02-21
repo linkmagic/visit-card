@@ -10,7 +10,7 @@ function cudeRotation() {
 }
 
 function rotate() {
-  setInterval(cudeRotation, 24);
+  setInterval(cudeRotation, 25);
 }
 
-// rotate();
+rotate();
