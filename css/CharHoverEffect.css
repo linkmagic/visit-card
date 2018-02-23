@@ -1,52 +1,27 @@
+.HomeTitle {
+  font-family: 'Oleo Script Swash Caps';
+  font-size: 7rem;
+  color: #E0E1E0;
+  margin: 24px 0 0 128px;
+}
+
+.HomeDescr {
+  font-family: monospace;
+  font-size: 2rem;
+}
+
 .CharHoverEffect {
-  will-change: transform;
   display: inline-block;
   position: relative;
   color: #E0E1E0;
   margin: 0 -2px;
-  animation: animateCharOut 1s ease;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  transition: 0.75s ease-in;
+  text-shadow: 0 0 0px #ff0000;
 }
 
 .CharHoverEffect:hover {
   cursor: default;
-  animation: animateCharIn 1s ease;
-  animation-iteration-count: 1;
-}
-
-@keyframes animateCharIn {
-  0% {
-    transform: rotate(30deg);
-  }
-  25% {
-    transform: rotate(-30deg);
-  }
-  50% {
-    transform: rotate(15deg);
-  }
-  75% {
-    transform: rotate(-15deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes animateCharOut {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-15deg);
-  }
-  50% {
-    transform: rotate(15deg);
-  }
-  75% {
-    transform: rotate(-30deg);
-  }
-  100% {
-    transform: rotate(30deg);
-  }
+  color: #FFD900;
+  transition: 0.25s linear;
+  text-shadow: 0 0 46px #ff0000;
 }

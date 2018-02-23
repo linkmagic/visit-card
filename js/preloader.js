@@ -1,16 +1,17 @@
-var rotateY = 0,
-    rotateX = 0;
+var rotateCube = 0;
 
 function cudeRotation() {
-  rotateX += 1;
-  rotateY += 1;
+	if (rotateCube === 360) {
+		rotateCube = 0;
+	}
+  rotateCube++;
   document.querySelector('.cube').style.transform =
-    'rotateY(' + rotateY + 'deg)'+
-    'rotateX(' + rotateX + 'deg)';
+    'rotateY(' + rotateCube + 'deg)'+
+    'rotateX(' + rotateCube + 'deg)';
 }
 
 function rotate() {
-  setInterval(cudeRotation, 25);
+  setInterval(cudeRotation, 50);
 }
 
 rotate();
