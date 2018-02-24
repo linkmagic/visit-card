@@ -1,11 +1,12 @@
 .MenuBar {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	height: 100%;
 	background-color: #171814;
 	border-right: 1px solid #808080;
 	border-bottom: none;
 	box-shadow: 12px 0 32px rgba(0,0,0,0.5);
+	z-index: 999;
 }
 
 .MenuBar__Button {
@@ -48,6 +49,6 @@
   }
 	.indent {
 		display: inline-block;
-		width: 25%;
+		width: 30%;
 	}
 }

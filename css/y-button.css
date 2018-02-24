@@ -1,0 +1,17 @@
+.y-button {
+	color: #E0E1E0;
+	font-family: 'Courier New';
+	font-size: 2rem;
+	margin: 0;
+	padding: 8px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	background-color: transparent;
+	transition: 0.75s ease-in;
+  box-shadow: 0 0 0px #ff0000;
+}
+
+.y-button:hover {
+  transition: 0.25s linear;
+  box-shadow: 0 0 46px #FF4200, inset 0 0 16px #FF4200;
+}

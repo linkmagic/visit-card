@@ -1,13 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+.title-spacer {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 2rem;
+}
+
+.HomeTitle-tag-line {
+  margin: 2rem 0 0 0;
+  font-family: 'Marck Script';
+  font-style: italic;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
+  color: #676767;
+}
+
 .HomeTitle {
   font-family: 'Oleo Script Swash Caps';
-  font-size: 7rem;
+  font-size: 6rem;
   color: #E0E1E0;
-  margin: 24px 0 0 128px;
+  padding: 0;
+  margin: 0 0 0 8rem;
 }
 
 .HomeDescr {
+  margin: 1rem 0 0 2rem;
   font-family: monospace;
   font-size: 2rem;
+  color: #919191;
+}
+
+.CharHoverLine {
+  display: block;
+  margin: 0 0 0 2rem;
+  line-height: 8rem;
 }
 
 .CharHoverEffect {
@@ -24,4 +52,15 @@
   color: #FFD900;
   transition: 0.25s linear;
   text-shadow: 0 0 46px #ff0000;
+}
+
+
+@media screen and (max-width: 425px) {
+  .HomeTitle {
+    font-size: 5rem;
+    margin: 2rem 0 0 3rem;
+  }
+  .HomeDescr {
+    font-size: 1.6rem;
+  }
 }

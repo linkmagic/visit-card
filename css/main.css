@@ -9,3 +9,8 @@ body {
   margin: 0;
   background-color: #171814;
 }
+
+.footer-spacer {
+	display: block;
+	height: 4rem;
+}

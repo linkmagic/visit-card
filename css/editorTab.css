@@ -47,15 +47,18 @@
 
 .editorLineNum {
   display: block;
+  font-family: 'Courier New';
   font-size: 2rem;
+  line-height: 140%;
   color: #535455;
 }
 
 .statusBarEditor {
+  font-family: arial;
   font-size: 1.2rem;
   color: #e3e3e3;
   height: 24px;
-  padding: 0 8px;
+  padding: 4px 8px 0 8px;
   outline: 1px solid #808080;
   background-color: #171814;
   box-shadow: 0 12px 32px rgba(0,0,0,0.5);
@@ -76,6 +79,15 @@
 .statusBarEditor__language,
 .statusBarEditor__lineEnd {
   float: right;
+}
+
+@media screen and (max-width: 370px) {
+  .editorLineNum {
+    font-size: 1.6rem;
+  }
+  .editor {
+    height: 20rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
