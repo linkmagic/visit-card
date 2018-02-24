@@ -25,6 +25,17 @@
 .MenuBarIcon__Skills,
 .MenuBarIcon__Projects,
 .MenuBarIcon__Contacts {
+	fill: #505050;
+}
+
+.MenuBarIcon__Home:hover,
+.MenuBarIcon__Skills:hover,
+.MenuBarIcon__Projects:hover,
+.MenuBarIcon__Contacts:hover {
+	fill: #E0E1E0;
+}
+
+.MenuBarIcon-active {
 	fill: #E0E1E0;
 }
 

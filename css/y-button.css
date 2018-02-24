@@ -8,10 +8,14 @@
 	border-radius: 4px;
 	background-color: transparent;
 	transition: 0.75s ease-in;
-  box-shadow: 0 0 0px #ff0000;
+  box-shadow: 0 0 0px #00FF00;
 }
 
 .y-button:hover {
   transition: 0.25s linear;
-  box-shadow: 0 0 46px #FF4200, inset 0 0 16px #FF4200;
+  box-shadow: 0 0 32px #00FF00, inset 0 0 16px #00FF00;
+  background-color: #2EC22E;
+  color: black;
+  font-weight: bold;
+  transform: scale(1.1,1.1);
 }

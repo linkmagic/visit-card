@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps');
 @import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
 
 .title-spacer {
   display: block;
@@ -8,21 +11,21 @@
   height: 2rem;
 }
 
-.HomeTitle-tag-line {
+.HomeTitleTagLine {
   margin: 2rem 0 0 0;
   font-family: 'Marck Script';
   font-style: italic;
   font-size: 2rem;
   letter-spacing: 0.25rem;
-  color: #676767;
+  color: #595959;
 }
 
 .HomeTitle {
-  font-family: 'Oleo Script Swash Caps';
+  font-family: 'Baloo Bhaina';
   font-size: 6rem;
   color: #E0E1E0;
   padding: 0;
-  margin: 0 0 0 8rem;
+  margin: 4rem 0 0 8rem;
 }
 
 .HomeDescr {
@@ -51,7 +54,7 @@
   cursor: default;
   color: #FFD900;
   transition: 0.25s linear;
-  text-shadow: 0 0 46px #ff0000;
+  text-shadow: 0 0 64px #ff0000;
 }
 
 
