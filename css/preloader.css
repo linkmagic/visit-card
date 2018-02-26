@@ -20,12 +20,12 @@
 .sideStyleWhite td,
 .sideStyleRed td,
 .sideStyleOrange td {
-  width: 5px;
-  height: 5px;
+  width: 16px;
+  height: 14px;
 }
 
 .sideStyleBlue td {
-  background-color: blue;
+  background-color: #2271DC;
 }
 
 .sideStyleGreen td {
@@ -33,7 +33,7 @@
 
 }
 .sideStyleYellow td {
-  background-color: #10BE10;
+  background-color: #22B222;
 }
 
 .sideStyleWhite td {
@@ -41,23 +41,11 @@
 }
 
 .sideStyleRed td {
-  background-color: #B71C1C;
+  background-color: #CC0D0D;
 }
 
 .sideStyleOrange td {
-  background-color: #FF3D00;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  /*margin: 0;*/
-  /*padding: 0;*/
-  /*left: 12px;*/
-  /*top: 12px;*/
+  background-color: #E6400C;
 }
 
 .loader * {
@@ -86,7 +74,7 @@ body {
 	position: absolute;
 	width: inherit;
 	height: inherit;
-	border: 1px solid black;
+	border: 1px solid white;
   box-shadow: 0 0 25px rgba(190,255,128,0.4);
 }
 
@@ -112,12 +100,4 @@ body {
 
 .side-blue {
   transform: rotateX(-90deg) translateZ(8px);
-}
-
-@media screen and (max-width: 425px) {
- /* .loader {
-    display: inline-block;
-    float: left;
-    position: absolute;
- */ }
 }

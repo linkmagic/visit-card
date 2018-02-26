@@ -5,10 +5,11 @@ html {
 
 body {
   margin: 0;
-  background-color: #171814;
+  padding: 0;
+  background-color: #1b1c17;
 }
 
-.footer-spacer {
+.FooterSpacer {
 	display: block;
 	height: 4rem;
 }

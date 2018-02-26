@@ -8,10 +8,10 @@
   position: absolute;
   color: #fbed4d;
   font-family: Lobster;
-  font-size: 8rem;
-  top: 3rem;
-  left: 5rem;
-  text-shadow: 4px 4px 4px rgba(235,0,5,0.75);
+  font-size: 16rem;
+  top: 5rem;
+  left: 9rem;
+  text-shadow: 4px 4px 8px rgba(0,0,0,0.75);
 }
 
 .LogoCubeSideBlue td,
@@ -20,12 +20,12 @@
 .LogoCubeSideWhite td,
 .LogoCubeSideRed td,
 .LogoCubeSideOrange td {
-  width: 64px;
-  height: 42px;
+  width: 254px;
+  height: 254px;
 }
 
 .LogoCubeSideBlue td {
-  background-color: blue;
+  background-color: #2271DC;
 }
 
 .LogoCubeSideGreen td {
@@ -33,7 +33,7 @@
 
 }
 .LogoCubeSideYellow td {
-  background-color: #10BE10;
+  background-color: #22B222;
 }
 
 .LogoCubeSideWhite td {
@@ -41,58 +41,197 @@
 }
 
 .LogoCubeSideRed td {
-  background-color: #B71C1C;
+  background-color: #CC0D0D;
 }
 
 .LogoCubeSideOrange td {
-  background-color: #FF3D00;
+  background-color: #E6400C;
+}
+
+.LogoCube {
+  position: relative;
+  float: right;
+  width: 256px;
+  height: 256px;
+  padding: 0;
+  top: 128px;
+  left: -256px;
+  transform-style: preserve-3d;
+  transform: rotateY(45deg) rotateX(45deg);
 }
 
 .LogoCube * {
   box-sizing: border-box;
 }
 
-.LogoCube {
-  display: block;
-  position: relative;
-  width: 128px;
-  height: 128px;
-  padding: 0;
-  top: 64px;
-  left: 128px;
-  /*perspective: 3000px;*/
-  transform-style: preserve-3d;
-  transform: rotateY(45deg) rotateX(45deg);
-}
-
 .LogoCubeSide {
   position: absolute;
   width: inherit;
   height: inherit;
-  border: 1px solid black;
-  box-shadow: 0 0 25px rgba(190,255,128,0.4);
+  border: 1px solid white;
+  box-shadow: 0 0 100px rgba(190,255,128,0.4);
 }
 
 .SideTransformRed {
-  transform: translateZ(64px);
+  transform: translateZ(128px);
 }
 
 .SideTransformOrange {
-  transform: rotateY(180deg) translateZ(64px);
+  transform: rotateY(180deg) translateZ(128px);
 }
 
 .SideTransformWhite {
-  transform: rotateY(90deg) translateZ(64px);
+  transform: rotateY(90deg) translateZ(128px);
 }
 
 .SideTransformYellow {
-  transform: rotateY(-90deg) translateZ(64px);
+  transform: rotateY(-90deg) translateZ(128px);
 }
 
 .SideTransformGreen {
-  transform: rotateX(90deg) translateZ(64px);
+  transform: rotateX(90deg) translateZ(128px);
 }
 
 .SideTransformBlue {
-  transform: rotateX(-90deg) translateZ(64px);
+  transform: rotateX(-90deg) translateZ(128px);
+}
+
+@media screen and (min-width: 1440px) {
+  .LogoCube {
+    left: -400px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .LogoCube {
+    left: -600px;
+  }
+}
+
+@media screen and (min-width: 2561px) {
+  .LogoCube {
+    left: -800px;
+  }
+}
+
+@media screen and (min-width: 3441px) {
+  .LogoCube {
+    left: -1000px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .LogoCubeSidetxt {
+    font-size: 8rem;
+    top: 3rem;
+    left: 5rem;
+  }
+
+  .LogoCubeSideBlue td,
+  .LogoCubeSideGreen td,
+  .LogoCubeSideYellow td,
+  .LogoCubeSideWhite td,
+  .LogoCubeSideRed td,
+  .LogoCubeSideOrange td {
+    width: 126px;
+    height: 126px;
+  }
+
+  .LogoCube {
+    width: 128px;
+    height: 128px;
+    left: -256px;
+    top: 110px;
+  }
+
+  .SideTransformRed {
+    transform: translateZ(64px);
+  }
+
+  .SideTransformOrange {
+    transform: rotateY(180deg) translateZ(64px);
+  }
+
+  .SideTransformWhite {
+    transform: rotateY(90deg) translateZ(64px);
+  }
+
+  .SideTransformYellow {
+    transform: rotateY(-90deg) translateZ(64px);
+  }
+
+  .SideTransformGreen {
+    transform: rotateX(90deg) translateZ(64px);
+  }
+
+  .SideTransformBlue {
+    transform: rotateX(-90deg) translateZ(64px);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .LogoCube {
+    top: 64px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .LogoCube {
+    left: -128px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .LogoCube {
+    left: -64px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .LogoCubeSidetxt {
+    font-size: 4rem;
+    top: 1.5rem;
+    left: 2.5rem;
+  }
+
+  .LogoCubeSideBlue td,
+  .LogoCubeSideGreen td,
+  .LogoCubeSideYellow td,
+  .LogoCubeSideWhite td,
+  .LogoCubeSideRed td,
+  .LogoCubeSideOrange td {
+    width: 63px;
+    height: 63px;
+  }
+
+  .LogoCube {
+    width: 64px;
+    height: 64px;
+    left: -44px;
+    top: 64px;
+  }
+
+  .SideTransformRed {
+    transform: translateZ(32px);
+  }
+
+  .SideTransformOrange {
+    transform: rotateY(180deg) translateZ(32px);
+  }
+
+  .SideTransformWhite {
+    transform: rotateY(90deg) translateZ(32px);
+  }
+
+  .SideTransformYellow {
+    transform: rotateY(-90deg) translateZ(32px);
+  }
+
+  .SideTransformGreen {
+    transform: rotateX(90deg) translateZ(32px);
+  }
+
+  .SideTransformBlue {
+    transform: rotateX(-90deg) translateZ(32px);
+  }
 }

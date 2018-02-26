@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
 
-.title-spacer {
+.TitleSpacer {
   display: block;
   padding: 0;
   margin: 0;
@@ -11,11 +11,22 @@
   height: 2rem;
 }
 
+.TitleSpacerDynamic {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 0; 
+  height: 10rem;
+}
+
 .HomeTitleTagLine {
-  margin: 2rem 0 0 0;
+  display: block;
+  margin: 1rem 0;
+  padding: 0;
   font-family: 'Marck Script';
   font-style: italic;
   font-size: 2rem;
+  line-height: 2rem;
   letter-spacing: 0.25rem;
   color: #595959;
 }
@@ -24,12 +35,11 @@
   font-family: 'Baloo Bhaina';
   font-size: 6rem;
   color: #E0E1E0;
+  margin: 8rem 0 0 24rem;
   padding: 0;
-  margin: 4rem 0 0 8rem;
 }
 
 .HomeDescr {
-  margin: 1rem 0 0 2rem;
   font-family: monospace;
   font-size: 2rem;
   color: #919191;
@@ -37,7 +47,8 @@
 
 .CharHoverLine {
   display: block;
-  margin: 0 0 0 2rem;
+  margin: 0;
+  padding: 0;
   line-height: 8rem;
 }
 
@@ -46,6 +57,7 @@
   position: relative;
   color: #E0E1E0;
   margin: 0 -2px;
+  padding: 0;
   transition: 0.75s ease-in;
   text-shadow: 0 0 0px #ff0000;
 }
@@ -57,13 +69,53 @@
   text-shadow: 0 0 64px #ff0000;
 }
 
-
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 1600px) {
   .HomeTitle {
-    font-size: 5rem;
-    margin: 2rem 0 0 3rem;
+    margin: 8rem 0 0 36rem;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .HomeTitle {
+    margin: 8rem 0 0 48rem;
+  }
+}
+
+@media screen and (min-width: 2561px) {
+  .HomeTitle {
+    margin: 8rem 0 0 60rem;
+  }
+}
+
+@media screen and (min-width: 3441px) {
+  .HomeTitle {
+    margin: 8rem 0 0 72rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .HomeTitle {
+    margin: 3rem 0 0 8rem;
+  }
+  .TitleSpacerDynamic {
+    height: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .HomeTitle {
+    font-size: 4rem;
+    margin: 2rem 0 0 8rem;
   }
   .HomeDescr {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .HomeTitle {
+    font-size: 3.5rem;
+    /*letter-spacing: -0.2rem;*/
+    margin: 2rem 0 0 2rem;
   }
 }
