@@ -26,6 +26,7 @@
 	font-family: "Courier New";
 	line-height: 140%;
 }
+
 #typewriter:after {
 	content: "|";
   color: #e3e3e3;

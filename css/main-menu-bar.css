@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 .MenuBar {
 	position: fixed;
 	top: 0;
@@ -11,41 +13,44 @@
 
 .MenuBar__Button {
 	display: block;
-	background: transparent;
-	border: none;
-	padding: 0;
-	margin: 8px;
+	text-decoration: none;
+	width: 52px;
+	height: 24px;
+	margin: 24px 0 0 0;
 }
 
-.MenuBar__Button-active {
-	fill: #43bdef;
-}
-
-.MenuBarIcon__Home,
-.MenuBarIcon__Skills,
-.MenuBarIcon__Projects,
-.MenuBarIcon__Contacts {
+.MenuBarIcon {
 	fill: #505050;
-}
-
-.MenuBarIcon__Home:hover,
-.MenuBarIcon__Skills:hover,
-.MenuBarIcon__Projects:hover,
-.MenuBarIcon__Contacts:hover {
-	fill: #E0E1E0;
+	margin: 0 0 0 12px;
 }
 
 .MenuBarIcon-active {
 	fill: #E0E1E0;
 }
 
-#typewriter {
-	padding: 10px 50px;
-}
-
 .indent {
 	width: 0;
-	height: 30%;
+	height: 40%;
+}
+
+.ToolTip {
+	position: relative;
+	text-align: center;
+	font-family: 'Open Sans Condensed';
+	font-size: 2rem;
+	color: #E0E1E0;
+	margin: 0 6px;
+  top: -26px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.MenuBar__Button:hover .ToolTip {
+	opacity: 1;
+}
+
+.MenuBar__Button:hover .MenuBarIcon {
+	opacity: 0;
 }
 
 @media screen and (max-width: 425px) {
@@ -57,9 +62,18 @@
 	}
 	.MenuBar__Button {
 	  display: inline-block;
+	  position: relative;
+		margin: 0;
+		top: 12px;
   }
 	.indent {
 		display: inline-block;
-		width: 30%;
+		width: 24%;
 	}
+}
+
+@media screen and (max-height: 380px) {
+  .indent {
+		height: 24%;
+  }
 }
