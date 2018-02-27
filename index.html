@@ -7,7 +7,6 @@
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/main-menu.css">
     <link rel="stylesheet" href="./css/main-menu-bar.css">
     <link rel="stylesheet" href="./css/social.css">
     <link rel="stylesheet" href="./css/char-hover-effect.css">
@@ -24,32 +23,32 @@
     <div class="MainMenu">
       <div id="idMenuHome" class="MainMenu__Home">
         <svg class="IconHome" fill="#FFFFFF" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-            <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
         </svg>
       </div>
       <div id="idMenuContacts" class="MainMenu__Contacts">
         <svg class="IconContacts" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
         </svg>
       </div>
       <div id="idMenuExperience" class="MainMenu__Experience">
         <svg class="IconExperience" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M22 18V3H2v15H0v2h24v-2h-2zm-8 0h-4v-1h4v1zm6-3H4V5h16v10z"/>
         </svg>
       </div>
       <div id="idMenuSelfProjects" class="MainMenu__SelfProjects">
         <svg class="IconSelfProjects" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z" fill="none"/>
-            <path d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"/>
+          <path d="M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z" fill="none"/>
+          <path d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"/>
         </svg>
       </div>
       <div id="idMenuMenu" class="MainMenu__Menu" onclick="displayMenu()">
         <svg class="IconMenu" fill="#FFFFFF" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
       </div>
     </div>
@@ -98,28 +97,31 @@
 
       <div class="indent"></div>
 
-      <a href="#" class="MenuBar__Button">
+      <a onclick="loadPage(0)" class="MenuBar__Button">
         <svg class="MenuBarIcon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
           <path d="M0 0h24v24H0z" fill="none"/>
         </svg>
         <div class="ToolTip">Home</div>
       </a>
-      <a href="#" class="MenuBar__Button">
+      
+      <a onclick="loadPage(1)" class="MenuBar__Button">
         <svg class="MenuBarIcon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-1.75 9c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.3.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.26 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.29l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42c-.09-.15-.05-.34.08-.45l1.48-1.16c-.03-.23-.05-.46-.05-.69 0-.23.02-.46.05-.68l-1.48-1.16c-.13-.11-.17-.3-.08-.45l1.4-2.42c.09-.15.27-.21.43-.15l1.74.7c.36-.28.76-.51 1.18-.69l.26-1.85c.03-.17.18-.3.35-.3h2.8c.17 0 .32.13.35.29l.26 1.85c.43.18.82.41 1.18.69l1.74-.7c.16-.06.34 0 .43.15l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.23.05.46.05.69z"/>
         </svg>
         <div class="ToolTip">Skills</div>
       </a>
-      <a href="#" class="MenuBar__Button">
+      
+      <a onclick="loadPage(2)" class="MenuBar__Button">
         <svg class="MenuBarIcon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0h24v24H0z" fill="none"/>
           <path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"/>          
         </svg>
         <div class="ToolTip">Projects</div>
       </a>
-      <a href="#" class="MenuBar__Button">
+      
+      <a onclick="loadPage(3)" class="MenuBar__Button">
         <svg class="MenuBarIcon" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
           <path d="M0 0h24v24H0z" fill="none"/>
@@ -128,123 +130,58 @@
       </a>
     </div>
 
-    <div class="tabsEditor">
-      <div class="tabs">
-        <div class="tab">Home</div>  
-      </div>
-      <div class="editor">
-        <div class="editorLines">
-          <span class="editorLineNum">1</span>
-          <span class="editorLineNum">2</span>
-          <span class="editorLineNum">3</span>
-          <span class="editorLineNum">4</span>
-          <span class="editorLineNum">5</span>
-          <span class="editorLineNum">6</span>
-          <span class="editorLineNum">7</span>
-          <span class="editorLineNum">8</span>
-          <span class="editorLineNum">9</span>
-          <span class="editorLineNum">10</span>
-        </div>
-        <pre id="typewriter">
-<span class="var-highlight">var</span><span class="var-name-highlight"> object</span><span class="sign-equal-highlight"> =</span><span class="sign-other-highlight"> {</span>
-  <span class="obj-field-highlight">name</span><span class="sign-other-highlight">:</span> <span class="string-highlight">'Yevhen Sapsai'</span><span class="sign-other-highlight">,</span>
-  <span class="obj-field-highlight">type</span><span class="sign-other-highlight">:</span> <span class="string-highlight">'Front-end Developer'</span><span class="sign-other-highlight">,</span>
-  <span class="obj-field-highlight">location</span><span class="sign-other-highlight">:</span> <span class="string-highlight">'Kyiv, Ukraine'</span><span class="sign-other-highlight">,</span>
-  <span class="obj-field-highlight">skills</span><span class="sign-other-highlight">: [</span><span class="string-highlight">'HTML5'</span><span class="sign-other-highlight">,</span><span class="string-highlight">'CSS3'</span><span class="sign-other-highlight">,</span></span><span class="string-highlight">'ES6'</span><span class="sign-other-highlight">,</span>
-           <span class="string-highlight">'React'</span><span class="sign-other-highlight">,</span><span class="string-highlight">'Redux'</span><span class="sign-other-highlight">,</span>
-           <span class="string-highlight">'Gulp'</span><span class="sign-other-highlight">,</span><span class="string-highlight">'Webpack'</span><span class="sign-other-highlight">,</span>
-           <span class="string-highlight">'Git'</span><span class="sign-other-highlight">];</span>
-<span class="sign-other-highlight">};</span> </pre>
-      </div>
-      <div class="statusBarEditor">
-        <span class="statusBarEditor__cursor">Line 9, Column 4</span>
-        <span class="statusBarEditor__encoding">UTF-8</span>
-        <span class="statusBarEditor__language">JS (Babel)</span>
-        <span class="statusBarEditor__lineEnd">LF (Unix)</span>
-      </div>
-    </div>
+    <!-- <iframe src="./work-experience.html" width="300" height="300" frameborder="0"></iframe> -->
+    <iframe id="idFrameContent" class="FrameContent" src="./home.html" frameborder="0"></iframe>
 
-    <div class="LogoCube">
-      <div class="LogoCubeSide SideTransformRed">
-        <table class="LogoCubeTblStyle LogoCubeSideRed">
-          <tbody><tr><td></td></tr></tbody>
-        </table>
-        <div class="LogoCubeSidetxt">Y</div>
-      </div>
-      <div class="LogoCubeSide SideTransformOrange">
-        <table class="LogoCubeTblStyle LogoCubeSideOrange">
-          <tbody><tr><td></td></tr></tbody>
-        </table>
-        <div class="LogoCubeSidetxt">Y</div>
-      </div>
-      <div class="LogoCubeSide SideTransformWhite">
-        <table class="LogoCubeTblStyle LogoCubeSideWhite">
-          <tbody><tr><td></td></tr></tbody>
-        </table>
-        <div class="LogoCubeSidetxt">Y</div>
-      </div>
-      <div class="LogoCubeSide SideTransformYellow">
-        <table class="LogoCubeTblStyle LogoCubeSideYellow">
-          <tbody><tr><td></td></tr></tbody>
-        </table>
-        <div class="LogoCubeSidetxt">Y</div>
-      </div>
-      <div class="LogoCubeSide SideTransformGreen">
-        <table class="LogoCubeTblStyle LogoCubeSideGreen">
-          <tbody><tr><td></td></tr></tbody>
-        </table>
-        <div class="LogoCubeSidetxt">Y</div>
-      </div>
-      <div class="LogoCubeSide SideTransformBlue">
-        <table class="LogoCubeTblStyle LogoCubeSideBlue">
-          <tbody><tr><td></td></tr></tbody>
-        </table>
-        <div class="LogoCubeSidetxt">Y</div>
-      </div>
-    </div>
-
-    <div class="HomeTitle">
-      <div class="HomeTitleTagLine">&lt;h1&gt;</div>
-      <div class="CharHoverLine">
-        <span class="CharHoverEffect">H</span>
-        <span class="CharHoverEffect">i</span>,
-      </div>
-      <div class="CharHoverLine">
-        <span class="CharHoverEffect">I</span>'
-        <span class="CharHoverEffect">m</span>&nbsp;
-        <span class="CharHoverEffect">Y</span>
-        <span class="CharHoverEffect">e</span>
-        <span class="CharHoverEffect">v</span>
-        <span class="CharHoverEffect">h</span>
-        <span class="CharHoverEffect">e</span>
-        <span class="CharHoverEffect">n</span>,
-      </div>
-      <div class="CharHoverLine">
-        <span class="CharHoverEffect">W</span>
-        <span class="CharHoverEffect">e</span>
-        <span class="CharHoverEffect">b</span>&nbsp;
-        <span class="CharHoverEffect">d</span>
-        <span class="CharHoverEffect">e</span>
-        <span class="CharHoverEffect">v</span>
-        <span class="CharHoverEffect">e</span>
-        <span class="CharHoverEffect">l</span>
-        <span class="CharHoverEffect">o</span>
-        <span class="CharHoverEffect">p</span>
-        <span class="CharHoverEffect">e</span>
-        <span class="CharHoverEffect">r</span>
-        <div class="HomeTitleTagLine">&lt;/h1&gt;</div>
-      </div>
-      <div class="TitleSpacer"></div>
-      <div class="HomeDescr">Front End Developer / React JS</div>
-      <div class="TitleSpacerDynamic"></div>
-      <button class="YButton">&nbsp;Contact Me :)&nbsp;</button>
-    </div>
+    
 
     <div class="FooterSpacer"></div>
 
     <script src="./js/polyfill-classList.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/typewriter.js"></script>
+    <!-- <script src="./js/typewriter.js"></script> -->
     <script src="./js/preloader.js"></script>
+    
+    <script>
+      function loadPage(id) {
+        
+        let url = '',
+            fileName = '';
+
+        switch(id) {
+          case 0: {
+            url = '/';
+            fileName = './home.html';
+            break;
+          }
+          case 1: {
+            url = '/skills';
+            fileName = './skills.html';
+            break;
+          }
+          case 2: {
+            url = '/projects';
+            fileName = './projects.html';
+            break;
+          }
+          case 3: {
+            url = '/contact';
+            fileName = './contact.html';
+            break;
+          }
+        }
+
+        // change URL
+        // window.history.pushState('strObj', 'title', url);
+
+        // load page by id
+        let frame = document.getElementById('idFrameContent');
+        frame.src = fileName;
+      }
+
+      loadPage(0);
+
+    </script>
+
   </body>
 </html>
