@@ -17,9 +17,9 @@ body {
 .FrameContent {
 	display: block;
 	position: absolute;
-	width: 100%;
+	width: calc(100% - 52px);
 	height: 100vh;
 	top: 0;
-	margin: 0;
+	margin: 0 0 0 50px;
 	padding: 0;
 }
