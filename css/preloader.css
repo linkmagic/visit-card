@@ -47,32 +47,32 @@
 }
 
 .loader * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .loader {
-	position: absolute;
-	width: 16px;
-	height: 16px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
   margin: 0;
   padding: 0;
   top: 12px;
   left: 16px;
-	perspective: 500px;
+  perspective: 500px;
 }
 
 .cube {
-	width: inherit;
-	height: inherit;
-	transform-style: preserve-3d;
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
   transform: rotateY(45deg) rotateX(45deg);
 }
 
 .side {
-	position: absolute;
-	width: inherit;
-	height: inherit;
-	border: 1px solid white;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border: 1px solid white;
   box-shadow: 0 0 25px rgba(190,255,128,0.4);
 }
 

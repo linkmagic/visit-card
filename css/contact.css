@@ -1,5 +1,5 @@
 .Contacts {
-	margin: 0 10rem;
+  margin: 0 10rem;
 }
 
 .ContachTitle {
@@ -13,7 +13,7 @@
 }
 
 .ContachTitleH3 {
-	font-family: 'Baloo Bhaina';
+  font-family: 'Baloo Bhaina';
   font-size: 3rem;
   font-weight: normal;
   letter-spacing: 4px;
@@ -32,7 +32,7 @@
 }
 
 .EmailInText {
-	color: #27ABAB;
+  color: #27ABAB;
 }
 
 .ContactForm {
@@ -48,22 +48,22 @@
 }
 
 .ContactForm__UserData {
-	display: block;
+  display: block;
   margin: 0 0 3rem 0;
 }
 
 .ContactForm__UserData > * {
-	opacity: 0;
+  opacity: 0;
 }
 
 .UserData__Name,
 .UserData__Email,
 .UserData__Msg {
-	font-family: 'Roboto';
-	font-size: 2rem;
-	font-weight: normal;
-	margin: 0 8px 0 0;
-	padding: 0 6px 6px 6px;
+  font-family: 'Roboto';
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0 8px 0 0;
+  padding: 0 6px 6px 6px;
   background-color: transparent;
   color: #919191;
   border: 1px solid #808080;
@@ -78,23 +78,23 @@
 .ContactForm__UserData__Name,
 .ContactForm__UserData__Email,
 .ContactForm__UserData__Msg {
-	
+  
 }
 
 .ContactForm__Input {
-	font-family: 'Roboto';
-	font-size: 2rem;
-	font-weight: normal;
-	padding: 4px;
-	margin: 0 0 2rem 0;
-	width: 48rem;
-	background-color: #1B1C17;
-	color: white;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 2px solid #4F4F4F;
-	transition: border-bottom 0.25s;
+  font-family: 'Roboto';
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 4px;
+  margin: 0 0 2rem 0;
+  width: 48rem;
+  background-color: #1B1C17;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #4F4F4F;
+  transition: border-bottom 0.25s;
 }
 .ContactForm__Input:focus {
   outline: none;
@@ -107,15 +107,15 @@
 
 .ContactForm__Button {
   color: #E0E1E0;
-	font-family: 'Roboto';
-	font-size: 2rem;
-	margin: 0;
-	padding: 8px;
-	margin: 0 6px 0 0;
-	border: 1px solid gray;
-	border-radius: 2px;
-	background-color: transparent;
-	transition: 0.75s ease-in;
+  font-family: 'Roboto';
+  font-size: 2rem;
+  margin: 0;
+  padding: 8px;
+  margin: 0 6px 0 0;
+  border: 1px solid gray;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.75s ease-in;
 }
 
 .ContactBtn__Submit:hover,
@@ -128,7 +128,7 @@
 
 .ContactBtn__Back,
 .ContactBtn__Next {
-	box-shadow: 0 0 0px #2977D9;
+  box-shadow: 0 0 0px #2977D9;
 }
 .ContactBtn__Back:hover,
 .ContactBtn__Next:hover {
@@ -138,7 +138,7 @@
 }
 
 .ContactBtn__Submit {
-	box-shadow: 0 0 0px #00FF00;
+  box-shadow: 0 0 0px #00FF00;
 }
 .ContactBtn__Submit:hover {
   box-shadow: 0 0 32px #00FF00, inset 0 0 16px #00FF00;

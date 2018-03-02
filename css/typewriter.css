@@ -1,5 +1,5 @@
 .var-highlight {
-	color: #43bdef;
+  color: #43bdef;
 }
 
 .sign-other-highlight,
@@ -12,38 +12,38 @@
 }
 
 .obj-field-highlight {
-	color: #bfc300;
+  color: #bfc300;
 }
 
 .string-highlight {
-	color: #3bff00;
+  color: #3bff00;
 }
 
 #typewriter {
-	font-size: 2rem;
-	margin: 0;
-	padding: 0;
-	font-family: "Courier New";
-	line-height: 140%;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New";
+  line-height: 140%;
 }
 
 #typewriter:after {
-	content: "|";
+  content: "|";
   color: #e3e3e3;
-	animation: blink 500ms linear infinite alternate;
+  animation: blink 500ms linear infinite alternate;
 }
 
 @keyframes blink {
-	0% {
+  0% {
     opacity: 0;
   }
-	100% {
+  100% {
     opacity: 1;
   }
 }
 
 @media screen and (max-width: 370px) {
-	#typewriter {
-		font-size: 1.6rem;
-	}
+  #typewriter {
+    font-size: 1.6rem;
+  }
 }

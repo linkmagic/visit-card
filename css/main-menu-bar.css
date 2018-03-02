@@ -1,78 +1,78 @@
 .MenuBar {
-	position: fixed;
-	top: 0;
-	height: 100%;
-	width: 52px;
-	background-color: #171814;
-	border-right: 1px solid #808080;
-	border-bottom: none;
-	box-shadow: 12px 0 32px rgba(0,0,0,0.5);
-	z-index: 999;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 52px;
+  background-color: #171814;
+  border-right: 1px solid #808080;
+  border-bottom: none;
+  box-shadow: 12px 0 32px rgba(0,0,0,0.5);
+  z-index: 999;
 }
 
 .MenuBar__Button {
-	display: block;
-	text-decoration: none;
-	width: 52px;
-	height: 24px;
-	margin: 24px 0 0 0;
+  display: block;
+  text-decoration: none;
+  width: 52px;
+  height: 24px;
+  margin: 24px 0 0 0;
 }
 
 .MenuBarIcon {
-	fill: #505050;
-	margin: 0 0 0 12px;
+  fill: #505050;
+  margin: 0 0 0 12px;
 }
 
 .MenuBarIcon-active {
-	fill: #E0E1E0;
+  fill: #E0E1E0;
 }
 
 .indent {
-	width: 0;
-	height: 40%;
+  width: 0;
+  height: 40%;
 }
 
 .ToolTip {
-	position: relative;
-	text-align: center;
-	font-family: 'Open Sans Condensed';
-	font-size: 2rem;
-	color: #E0E1E0;
-	margin: 0 6px;
+  position: relative;
+  text-align: center;
+  font-family: 'Open Sans Condensed';
+  font-size: 2rem;
+  color: #E0E1E0;
+  margin: 0 6px;
   top: -26px;
   opacity: 0;
   transition: 0.5s;
 }
 
 .MenuBar__Button:hover .ToolTip {
-	opacity: 1;
+  opacity: 1;
 }
 
 .MenuBar__Button:hover .MenuBarIcon {
-	opacity: 0;
+  opacity: 0;
 }
 
 @media screen and (max-width: 425px) {
-	.MenuBar {
-		width: 100%;
-		height: auto;
-		border-right: none;
-		border-bottom: 1px solid #808080;
-	}
-	.MenuBar__Button {
-	  display: inline-block;
-	  position: relative;
-		margin: 0;
-		top: 12px;
+  .MenuBar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #808080;
   }
-	.indent {
-		display: inline-block;
-		width: 24%;
-	}
+  .MenuBar__Button {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    top: 12px;
+  }
+  .indent {
+    display: inline-block;
+    width: 24%;
+  }
 }
 
 @media screen and (max-height: 380px) {
   .indent {
-		height: 24%;
+    height: 24%;
   }
 }
