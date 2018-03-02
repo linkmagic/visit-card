@@ -1,0 +1,200 @@
+.Contacts {
+	margin: 0 10rem;
+}
+
+.ContachTitle {
+  font-family: 'Baloo Bhaina';
+  font-size: 6rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #E0E1E0;
+  margin: 0;
+  padding: 0;
+}
+
+.ContachTitleH3 {
+	font-family: 'Baloo Bhaina';
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #E0E1E0;
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.ContactDescr {
+  font-family: monospace;
+  font-size: 2rem;
+  color: #919191;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  width: 50%;
+}
+
+.EmailInText {
+	color: #27ABAB;
+}
+
+.ContactForm {
+
+}
+
+.ContactSpacerDynamic {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 0; 
+  height: 10rem;
+}
+
+.ContactForm__UserData {
+	display: block;
+  margin: 0 0 3rem 0;
+}
+
+.ContactForm__UserData > * {
+	opacity: 0;
+}
+
+.UserData__Name,
+.UserData__Email,
+.UserData__Msg {
+	font-family: 'Roboto';
+	font-size: 2rem;
+	font-weight: normal;
+	margin: 0 8px 0 0;
+	padding: 0 6px 6px 6px;
+  background-color: transparent;
+  color: #919191;
+  border: 1px solid #808080;
+  border-radius: 2px;
+  transition: opacity 0.25s;
+}
+
+.UserData__Icon {
+  margin: 6px 0 0 0;
+}
+
+.ContactForm__UserData__Name,
+.ContactForm__UserData__Email,
+.ContactForm__UserData__Msg {
+	
+}
+
+.ContactForm__Input {
+	font-family: 'Roboto';
+	font-size: 2rem;
+	font-weight: normal;
+	padding: 4px;
+	margin: 0 0 2rem 0;
+	width: 48rem;
+	background-color: #1B1C17;
+	color: white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #4F4F4F;
+	transition: border-bottom 0.25s;
+}
+.ContactForm__Input:focus {
+  outline: none;
+  border-bottom: 2px solid #BFBFBF;
+}
+
+.ContactForm__Buttons {
+
+}
+
+.ContactForm__Button {
+  color: #E0E1E0;
+	font-family: 'Roboto';
+	font-size: 2rem;
+	margin: 0;
+	padding: 8px;
+	margin: 0 6px 0 0;
+	border: 1px solid gray;
+	border-radius: 2px;
+	background-color: transparent;
+	transition: 0.75s ease-in;
+}
+
+.ContactBtn__Submit:hover,
+.ContactBtn__Back:hover,
+.ContactBtn__Next:hover {
+  transition: 0.25s linear;
+  font-weight: bold;
+  transform: scale(1.1,1.1);
+}
+
+.ContactBtn__Back,
+.ContactBtn__Next {
+	box-shadow: 0 0 0px #2977D9;
+}
+.ContactBtn__Back:hover,
+.ContactBtn__Next:hover {
+  box-shadow: 0 0 32px #2977D9, inset 0 0 16px #2977D9;
+  background-color: #246ECB;
+  color: black;
+}
+
+.ContactBtn__Submit {
+	box-shadow: 0 0 0px #00FF00;
+}
+.ContactBtn__Submit:hover {
+  box-shadow: 0 0 32px #00FF00, inset 0 0 16px #00FF00;
+  background-color: #00E200;
+  color: black;
+}
+
+.ContactSocial {
+
+}
+
+.SocialButtons {
+
+}
+
+.SocialBtn__Facebook:hover,
+.SocialBtn__Github:hover,
+.SocialBtn__Linkedin:hover,
+.SocialBtn__Codepen:hover {
+  transition: 0.25s linear;
+  font-weight: bold;
+  transform: scale(1.1,1.1);
+}
+
+.SocialBtn__Facebook {
+  box-shadow: 0 0 0px #4267B2;
+}
+.SocialBtn__Facebook:hover {
+  box-shadow: 0 0 32px #4267B2, inset 0 0 16px #4267B2;
+  background-color: #3E5E9E;
+  color: white;
+}
+
+.SocialBtn__Github {
+  box-shadow: 0 0 0px #E9E9E9;
+}
+.SocialBtn__Github:hover {
+  box-shadow: 0 0 32px #E9E9E9, inset 0 0 16px #E9E9E9;
+  background-color: #CBCBCB;
+  color: #000000;
+}
+
+.SocialBtn__Linkedin {
+  box-shadow: 0 0 0px #0077B5;
+}
+.SocialBtn__Linkedin:hover {
+  box-shadow: 0 0 32px #0077B5, inset 0 0 16px #0077B5;
+  background-color: #0077B5;
+  color: black;
+}
+
+.SocialBtn__Codepen {
+  box-shadow: 0 0 0px #0EBEFF;
+}
+.SocialBtn__Codepen:hover {
+  box-shadow: 0 0 32px #0EBEFF, inset 0 0 16px #0EBEFF;
+  background-color: #15A9E0;
+  color: black;
+}

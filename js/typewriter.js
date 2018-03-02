@@ -61,6 +61,6 @@ function setupTypewriter(t) {
   };
 }
 
-// var typer = document.getElementById('typewriter');
-// typewriter = setupTypewriter(typewriter);
-// typewriter.type();
+var idTypewriter = document.getElementById('typewriter');
+var typer = setupTypewriter(idTypewriter);
+typer.type();

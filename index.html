@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main-menu-bar.css">
-    <link rel="stylesheet" href="./css/social.css">
     <link rel="stylesheet" href="./css/char-hover-effect.css">
     <link rel="stylesheet" href="./css/typewriter.css">
     <link rel="stylesheet" href="./css/preloader.css">
@@ -97,54 +96,11 @@
       </a>
     </div>
 
-    <!-- <iframe src="./work-experience.html" width="300" height="300" frameborder="0"></iframe> -->
     <iframe id="idFrameContent" class="FrameContent" src="./home.html" frameborder="0"></iframe>
 
     <script src="./js/polyfill-classList.js"></script>
     <script src="./js/main.js"></script>
-    <!-- <script src="./js/typewriter.js"></script> -->
     <script src="./js/preloader.js"></script>
     
-    <script>
-      function loadPage(id) {
-        
-        let url = '',
-            fileName = '';
-
-        switch(id) {
-          case 0: {
-            url = '/';
-            fileName = './home.html';
-            break;
-          }
-          case 1: {
-            url = '/skills';
-            fileName = './skills.html';
-            break;
-          }
-          case 2: {
-            url = '/projects';
-            fileName = './projects.html';
-            break;
-          }
-          case 3: {
-            url = '/contact';
-            fileName = './contact.html';
-            break;
-          }
-        }
-
-        // change URL
-        // window.history.pushState('strObj', 'title', url);
-
-        // load page by id
-        let frame = document.getElementById('idFrameContent');
-        frame.src = fileName;
-      }
-
-      loadPage(3);
-
-    </script>
-
   </body>
 </html>
