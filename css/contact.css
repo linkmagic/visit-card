@@ -62,8 +62,9 @@
   font-family: 'Roboto';
   font-size: 2rem;
   font-weight: normal;
+  text-decoration: none;
   margin: 0 8px 0 0;
-  padding: 0 6px 6px 6px;
+  padding: 4px;
   background-color: transparent;
   color: #919191;
   border: 1px solid #808080;
@@ -72,7 +73,7 @@
 }
 
 .UserData__Icon {
-  margin: 6px 0 0 0;
+
 }
 
 .ContactForm__UserData__Name,
@@ -118,6 +119,10 @@
   transition: 0.75s ease-in;
 }
 
+.ContactForm__Button-disabled {
+  color: #888888;
+}
+
 .ContactBtn__Submit:hover,
 .ContactBtn__Back:hover,
 .ContactBtn__Next:hover {
@@ -128,12 +133,12 @@
 
 .ContactBtn__Back,
 .ContactBtn__Next {
-  box-shadow: 0 0 0px #2977D9;
+  box-shadow: 0 0 0px #3A88EA;
 }
 .ContactBtn__Back:hover,
 .ContactBtn__Next:hover {
-  box-shadow: 0 0 32px #2977D9, inset 0 0 16px #2977D9;
-  background-color: #246ECB;
+  box-shadow: 0 0 32px #3A88EA, inset 0 0 16px #3A88EA;
+  background-color: #3A88EA;
   color: black;
 }
 
@@ -187,7 +192,7 @@
 .SocialBtn__Linkedin:hover {
   box-shadow: 0 0 32px #0077B5, inset 0 0 16px #0077B5;
   background-color: #0077B5;
-  color: black;
+  color: #FFFFFF;
 }
 
 .SocialBtn__Codepen {
