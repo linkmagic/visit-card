@@ -31,12 +31,14 @@
   text-shadow: 4px 4px 16px rgba(0,0,0,0.75);
   z-index: 300;
 }
-.LogoCubeSidetxtSmall:hover {
-  opacity: 1;
-}
-.LogoCubeSidetxtSmall:hover + .LogoCubeSidetxt {
-  opacity: 0;
-}
+/*@media screen and (max-width: 1255px) {
+  .LogoCubeSidetxtSmall:hover {
+    opacity: 1;
+  }
+  .LogoCubeSidetxtSmall:hover + .LogoCubeSidetxt {
+    opacity: 0;
+  }
+}*/
 
 .LogoCubeSideBlue td,
 .LogoCubeSideGreen td,
@@ -118,6 +120,15 @@
 
 .SideTransformBlue {
   transform: rotateX(-90deg) translateZ(128px);
+}
+
+@media screen and (min-width: 1200px) {
+  .LogoCubeSidetxtSmall:hover {
+    opacity: 1;
+  }
+  .LogoCubeSidetxtSmall:hover + .LogoCubeSidetxt {
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
