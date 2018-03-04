@@ -23,3 +23,10 @@ body {
   margin: 0 0 0 50px;
   padding: 0;
 }
+
+@media screen and (max-width: 425px) {
+  .FrameContent {
+    margin: 50px 0 0 0;
+    width: 100%;
+  }
+}

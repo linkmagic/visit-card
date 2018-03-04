@@ -1,8 +1,10 @@
 .Contacts {
-  margin: 0 10rem;
+  padding: 0;
+  /*margin: 0 20rem;*/
 }
 
 .ContachTitle {
+  display: inline-block;
   font-family: 'Baloo Bhaina';
   font-size: 6rem;
   font-weight: normal;
@@ -28,7 +30,6 @@
   color: #919191;
   margin: 0 0 2rem 0;
   padding: 0;
-  width: 50%;
 }
 
 .EmailInText {
@@ -88,7 +89,7 @@
   font-weight: normal;
   padding: 4px;
   margin: 0 0 2rem 0;
-  width: 48rem;
+  width: 54rem;
   background-color: #1B1C17;
   color: white;
   border-top: none;
@@ -112,7 +113,7 @@
   font-size: 2rem;
   margin: 0;
   padding: 8px;
-  margin: 0 6px 0 0;
+  margin: 0 8px 8px 0;
   border: 1px solid gray;
   border-radius: 2px;
   background-color: transparent;
@@ -202,4 +203,65 @@
   box-shadow: 0 0 32px #0EBEFF, inset 0 0 16px #0EBEFF;
   background-color: #15A9E0;
   color: black;
+}
+
+.SocialButtons > button:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1031px) {
+  .Contacts {
+    margin: 0 20rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .Contacts {
+    margin: 0 36rem;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .Contacts {
+    margin: 0 48rem;
+  }
+}
+
+@media screen and (min-width: 2561px) {
+  .Contacts {
+    margin: 0 60rem;
+  }
+}
+
+@media screen and (min-width: 3441px) {
+  .Contacts {
+    margin: 0 72rem;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .Contacts {
+    margin: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .Contacts {
+    margin: 0 2rem;
+  }
+  .ContactForm__Input {
+    width: 100%;
+  }
+  .ContactSpacerDynamic {
+    height: 5rem;
+  }
+  .ContachTitle {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .ContachTitle {
+    font-size: 4rem;
+  }
 }

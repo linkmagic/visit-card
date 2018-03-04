@@ -1,0 +1,29 @@
+.ServiceChars {
+  color: #808080;
+}
+
+.ReserveWords {
+  color: #FD0D0D;
+}
+
+.FuncWords {
+  color: #12FF00;
+}
+
+.StringContent {
+  color: #F6FF00;
+}
+
+.ClassDefine,
+.DataType,
+.Directive {
+  color: #00EAFF;
+}
+
+.IncludeModule {
+  color: #FF1D57;
+}
+
+.Digits {
+  color: #E403F9;
+}

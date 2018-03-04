@@ -90,11 +90,11 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 373px) {
   .tabsEditor {
     margin-left: 0;
   }
   .tabs {
-    margin: 55px 0 0 0;
+    margin: 0;
   }
 }
