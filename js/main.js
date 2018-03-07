@@ -34,4 +34,4 @@ function loadPage(id) {
   frame.src = fileName;
 }
 
-loadPage(0);
+loadPage(1);

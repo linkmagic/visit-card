@@ -36,9 +36,7 @@
   color: #27ABAB;
 }
 
-.ContactForm {
-
-}
+/* .ContactForm {} */
 
 .ContactSpacerDynamic {
   display: block;
@@ -73,15 +71,11 @@
   transition: opacity 0.25s;
 }
 
-.UserData__Icon {
+/* .UserData__Icon {} */
 
-}
-
-.ContactForm__UserData__Name,
+/* .ContactForm__UserData__Name,
 .ContactForm__UserData__Email,
-.ContactForm__UserData__Msg {
-  
-}
+.ContactForm__UserData__Msg {} */
 
 .ContactForm__Input {
   font-family: 'Roboto';
@@ -103,9 +97,7 @@
   border-bottom: 2px solid #BFBFBF;
 }
 
-.ContactForm__Buttons {
-
-}
+/* .ContactForm__Buttons {} */
 
 .ContactForm__Button {
   color: #E0E1E0;
@@ -152,13 +144,9 @@
   color: black;
 }
 
-.ContactSocial {
+/* .ContactSocial {} */
 
-}
-
-.SocialButtons {
-
-}
+/* .SocialButtons {} */
 
 .SocialBtn__Facebook:hover,
 .SocialBtn__Github:hover,
