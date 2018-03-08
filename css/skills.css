@@ -10,39 +10,40 @@
   padding: 50px;
 }
 
-.FineButton {
+.SwayButton {
   display: inline-block;
   height: 50px;
-  /* outline: 1px dotted yellow; */
 }
 
 .Background {
   position: relative;
-  width: 196px;
   height: 50px;
-  left: 2px;
   background-color: #333333;
   border-radius: 6px;
+  transition: 0.2s;
 }
 
 .MiddleLayer {
   position: relative;
   top: -56px;
-  width: 200px;
   height: 50px;
-  background-color: #00796b;
+  background-color: #008800;
   border-radius: 6px;
 }
 
 .Foreground {
   position: relative;
   top: -112px;
-  width: 200px;
   height: 50px;
-  background-color: #009688;
+  padding: 0 16px;
+  background-color: #00b100;
   border-radius: 6px;
   text-align: center;
-  /* transform: skewY(0.0deg); */
+  transition: 0.2s;
+}
+
+.Foreground:hover {
+  background-color: #00a700;
 }
 
 .TextLabel {
