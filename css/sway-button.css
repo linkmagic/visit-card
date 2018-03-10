@@ -1,0 +1,45 @@
+.SwayButton {
+  display: inline-block;
+  height: 45px;
+}
+
+.Background {
+  position: relative;
+  height: 45px;
+  background-color: #262721;
+  border-radius: 6px;
+  filter: blur(2px);
+  transition: 0.2s;
+}
+
+.MiddleLayer {
+  position: relative;
+  top: -50px;
+  height: 45px;
+  background-color: #008800;
+  border-radius: 6px;
+}
+
+.Foreground {
+  position: relative;
+  top: -100px;
+  height: 45px;
+  padding: 0 16px;
+  background-color: #00b100;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.Foreground:hover {
+  background-color: #00a700;
+}
+
+.TextLabel {
+  position: relative;
+  top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}

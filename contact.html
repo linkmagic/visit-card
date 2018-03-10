@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="./css/main.css">
 <link rel="stylesheet" href="./css/fonts.css">
 <link rel="stylesheet" href="./css/contact.css">
+<link rel="stylesheet" href="./css/sway-button.css">
 
 <div class="Contacts">
 
@@ -55,7 +56,16 @@
     <h3 class="ContachTitleH3">Let's get social</h3>
     <p class="ContactDescr">Follow my online fan page on Facebook and profiles on GitHub and Linkedin.</p>
     <div class="SocialButtons">
-      <button class="ContactForm__Button SocialBtn__Facebook" onclick="openSocial('facebook')">Facebook</button>
+      <div id="idSwayButton" class="SwayButton" onclick="openSocial('facebook')">
+        <div class="Background"></div>
+        <div class="MiddleLayer"></div>
+        <div class="Foreground"><span class="TextLabel">Facebook</span></div>
+      </div>
+      <div id="idSwayButton" class="SwayButton" onclick="openSocial('linkedin')">
+        <div class="Background"></div>
+        <div class="MiddleLayer"></div>
+        <div class="Foreground"><span class="TextLabel">Facebook</span></div>
+      </div>
       <button class="ContactForm__Button SocialBtn__Linkedin" onclick="openSocial('linkedin')">Linkedin</button>
       <button class="ContactForm__Button SocialBtn__Github" onclick="openSocial('github')">Github</button>
       <button class="ContactForm__Button SocialBtn__Codepen" onclick="openSocial('codepen')">Codepen</button>
@@ -67,3 +77,4 @@
 </div>
 
 <script src="./js/contact.js"></script>
+<script src="./js/sway-button.js"></script>

@@ -6,51 +6,6 @@
   background-color: #474747;
 }
 
-.ButtonContainer {
-  padding: 50px;
-}
-
-.SwayButton {
-  display: inline-block;
-  height: 50px;
-}
-
-.Background {
-  position: relative;
-  height: 50px;
-  background-color: #333333;
-  border-radius: 6px;
-  transition: 0.2s;
-}
-
-.MiddleLayer {
-  position: relative;
-  top: -56px;
-  height: 50px;
-  background-color: #008800;
-  border-radius: 6px;
-}
-
-.Foreground {
-  position: relative;
-  top: -112px;
-  height: 50px;
-  padding: 0 16px;
-  background-color: #00b100;
-  border-radius: 6px;
-  text-align: center;
-  transition: 0.2s;
-}
-
-.Foreground:hover {
-  background-color: #00a700;
-}
-
-.TextLabel {
-  position: relative;
-  top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
+.button-container {
+  padding: 30px;
 }
