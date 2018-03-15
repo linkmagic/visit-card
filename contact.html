@@ -48,6 +48,12 @@
       <button id="idContactBtnSubmit" class="ContactForm__Button ContactBtn__Submit" onclick="fillUserDataForm__Submit()">Submit</button>
     </div>
 
+    <div class="ContactForm__Buttons">
+      <sway-button type="back" onclick="fillUserDataForm__Back()"></sway-button>
+      <sway-button type="next" onclick="fillUserDataForm__Next()"></sway-button>
+      <sway-button type="submit" onclick="fillUserDataForm__Submit()"></sway-button>
+    </div>
+
   </div>
 
   <div class="ContactSpacerDynamic"></div>
@@ -56,10 +62,10 @@
     <h3 class="ContachTitleH3">Let's get social</h3>
     <p class="ContactDescr">Follow my online fan page on Facebook and profiles on GitHub and Linkedin.</p>
     <div class="SocialButtons">
-      <sway-button type="facebook"></sway-button>
-      <sway-button type="linkedin"></sway-button>
-      <sway-button type="github"></sway-button>
-      <sway-button type="codepen"></sway-button>
+      <sway-button type="facebook" onclick="openSocial('facebook')"></sway-button>
+      <sway-button type="linkedin" onclick="openSocial('linkedin')"></sway-button>
+      <sway-button type="github" onclick="openSocial('github')"></sway-button>
+      <sway-button type="codepen" onclick="openSocial('codepen')"></sway-button>
     </div>
   </div>
 
