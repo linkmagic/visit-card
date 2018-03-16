@@ -87,6 +87,12 @@
     .submit-md-color {
       background-color: #03940a;
     }
+    .btn-disabled-fg-color {
+      background-color: #333333;
+    }
+    .btn-disabled-md-color {
+      background-color: #222222;
+    }
   </style>
   <div id="idSwayButton" class="sway-button">
     <div class="background-layer"></div>
@@ -186,14 +192,27 @@
 
     function checkType(el) {
       var type = el.getAttribute("type");
+      
       if (type &&	type.match(/^(facebook|github|codepen|linkedin|mail|back|next|ok|submit|cancel)$/i)) {
+        
+        el.text_label.innerHTML = String(type).capitalize();
+
         var icon = Icons.get(type);
         if (icon) {
+          el.svg_label.innerHTML = icon;
+        }
+
+        var enabled = el.getAttribute('enabled');
+        if (!enabled || enabled === 'true') {
           el.foreground_layer.classList.add(type + '-fg-color');
           el.middle_layer.classList.add(type + '-md-color');
-          el.svg_label.innerHTML = icon;
-          el.text_label.innerHTML = String(type).capitalize();
+        } else {
+          el.foreground_layer.classList.add('btn-disabled-fg-color');
+          el.middle_layer.classList.add('btn-disabled-md-color');
+          el.text_label.style = 'color: #505050;';
+          el.svg_label.style = 'opacity: 0.2;';
         }
+
       } else {
         el.text_label.innerHTML = String('Button').capitalize();
       }

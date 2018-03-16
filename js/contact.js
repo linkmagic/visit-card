@@ -202,3 +202,8 @@ idContactFormInput.placeholder = 'Name';
 // set BACK button to disabled
 disabledElement(idContactBtnBack, true, 'ContactForm__Button-disabled', 'ContactBtn__Back');
 disabledElement(idContactBtnSubmit, true, 'ContactForm__Button-disabled', 'ContactBtn__Submit');
+
+function clickTest1(btnDescriptor) {
+  btnDescriptor.setAttribute('enabled', 'true');
+  console.log(btnDescriptor.getAttribute('enabled'));
+}
