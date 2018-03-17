@@ -167,10 +167,16 @@
           backgroundLayer = el.background_layer;
 
       el.foreground_layer.addEventListener("mousemove", function (event) {
+        if (el.getAttribute('isenabled') === 'false') {
+          return;
+        }
         swayByCursor();
       });
 
       el.foreground_layer.addEventListener("mousedown", function (event) {
+        if (el.getAttribute('isenabled') === 'false') {
+          return;
+        }
         foregroundLayer.style.transform = 'skewY(0deg)';
         backgroundLayer.style.transform = 'skewY(0deg)';
         foregroundLayer.style.top = '-97px';
@@ -178,10 +184,16 @@
       });
 
       el.foreground_layer.addEventListener("mouseup", function(event){
+        if (el.getAttribute('isenabled') === 'false') {
+          return;
+        }
         swayByCursor();
       });
 
       el.foreground_layer.addEventListener("mouseout", function (event) {
+        if (el.getAttribute('isenabled') === 'false') {
+          return;
+        }
         foregroundLayer.style.transform = 'skewY(0deg)';
         backgroundLayer.style.transform = 'skewY(0deg)';
         foregroundLayer.style.top = '-100px';
@@ -202,22 +214,21 @@
           el.svg_label.innerHTML = icon;
         }
 
-        var enabled = el.getAttribute('enabled');
-        if (!enabled || enabled === 'true') {
-          el.foreground_layer.classList.add(type + '-fg-color');
-          el.middle_layer.classList.add(type + '-md-color');
-        } else {
+        el.foreground_layer.classList.add(type + '-fg-color');
+        el.middle_layer.classList.add(type + '-md-color');
+
+        var enabled = el.getAttribute('isenabled');
+        if (enabled && enabled === 'false') {
           el.foreground_layer.classList.add('btn-disabled-fg-color');
           el.middle_layer.classList.add('btn-disabled-md-color');
-          el.text_label.style = 'color: #505050;';
+          el.text_label.style = 'opacity: 0.2;';
           el.svg_label.style = 'opacity: 0.2;';
         }
-
       } else {
         el.text_label.innerHTML = String('Button').capitalize();
       }
     }
-   
+
     function init(el) {
       var clone = mainDoc.importNode(template, true);
       el.shadow = el.createShadowRoot();
@@ -229,6 +240,40 @@
       el.svg_label = el.shadow.querySelector('.svg-label');
       el.text_label = el.shadow.querySelector('.text-label');
       el.class = "sway-button";
+
+      var observerCallback = function(mutationsList) {
+        for(var mutation of mutationsList) {
+          if (mutation.type == 'attributes') {
+            if (mutation.attributeName === 'isenabled') {
+              var value = el.getAttribute('isenabled');
+              if (value) {
+                if (value === 'true') {
+                  if (el.foreground_layer.classList.contains('btn-disabled-fg-color')) {
+                    el.foreground_layer.classList.remove('btn-disabled-fg-color');
+                  }
+                  if (el.middle_layer.classList.contains('btn-disabled-md-color')) {
+                    el.middle_layer.classList.remove('btn-disabled-md-color');
+                  }
+                  el.text_label.style = 'opacity: 1.0;';
+                  el.svg_label.style = 'opacity: 1.0;';
+                } 
+                if (value === 'false') {
+                  if (!el.foreground_layer.classList.contains('btn-disabled-fg-color')) {
+                    el.foreground_layer.classList.add('btn-disabled-fg-color');
+                  }
+                  if (!el.middle_layer.classList.contains('btn-disabled-md-color')) {
+                    el.middle_layer.classList.add('btn-disabled-md-color');
+                  }
+                  el.text_label.style = 'opacity: 0.2;';
+                  el.svg_label.style = 'opacity: 0.2;';
+                }
+              }
+            }
+          }
+        }
+      };
+      var observer = new MutationObserver(observerCallback);
+      observer.observe(el, { attributes: true });
     }
     
     var mainDoc = document,

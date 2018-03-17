@@ -43,15 +43,9 @@
     <input id="idContactFormInput" class="ContactForm__Input" type="text" placeholder="" onkeypress="inputUserDataKeyPress(event)">
     
     <div class="ContactForm__Buttons">
-      <button id="idContactBtnBack" class="ContactForm__Button ContactBtn__Back" onclick="fillUserDataForm__Back()">Back</button>
-      <button id="idContactBtnNext" class="ContactForm__Button ContactBtn__Next" onclick="fillUserDataForm__Next()">Next</button>
-      <button id="idContactBtnSubmit" class="ContactForm__Button ContactBtn__Submit" onclick="fillUserDataForm__Submit()">Submit</button>
-    </div>
-
-    <div class="ContactForm__Buttons">
-      <sway-button enabled="false" type="back" onclick="clickTest1(this)"></sway-button>
-      <sway-button type="next" onclick="fillUserDataForm__Next()"></sway-button>
-      <sway-button type="submit" onclick="fillUserDataForm__Submit()"></sway-button>
+      <sway-button id="idContactBtnBack" isenabled="false" type="back" onclick="fillUserDataForm__Back()"></sway-button>
+      <sway-button id="idContactBtnNext" type="next" onclick="fillUserDataForm__Next()"></sway-button>
+      <sway-button id="idContactBtnSubmit" isenabled="false" type="submit" onclick="fillUserDataForm__Submit()"></sway-button>
     </div>
 
   </div>

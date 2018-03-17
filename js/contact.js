@@ -26,6 +26,10 @@ function disabledElement(idElement, flagValue, addClass, removeClass) {
   }
 }
 
+function enabledBtns(btnDescriptor, value) {
+  btnDescriptor.setAttribute('isenabled', value);
+}
+
 function assignUserData(input, btnId, classNameTitle, userDataObj, fieldName) {
   if (input.value.length > 0) {
     btnId.querySelector('.' + classNameTitle).innerHTML = input.value;
@@ -49,24 +53,24 @@ function fillUserDataForm__setBackId(domElement) {
     case 'idUserDataName': {
       backButtonPointer = '';
       currButtonPointer = 'name';
-      disabledElement(idContactBtnBack, true, 'ContactForm__Button-disabled', 'ContactBtn__Back');
-      disabledElement(idContactBtnNext, false, 'ContactBtn__Next', 'ContactForm__Button-disabled');
+      enabledBtns(idContactBtnBack, 'false');
+      enabledBtns(idContactBtnNext, 'true');
       break;
     }
     
     case 'idUserDataEmail': {
       backButtonPointer = 'name';
       currButtonPointer = 'email';
-      disabledElement(idContactBtnBack, false, 'ContactBtn__Back', 'ContactForm__Button-disabled');
-      disabledElement(idContactBtnNext, false, 'ContactBtn__Next', 'ContactForm__Button-disabled');
+      enabledBtns(idContactBtnBack, 'true');
+      enabledBtns(idContactBtnNext, 'true');
       break;
     }
     
     case 'idUserDataMsg': {
       backButtonPointer = 'email';
       currButtonPointer = 'message';
-      disabledElement(idContactBtnBack, false, 'ContactBtn__Back', 'ContactForm__Button-disabled');
-      disabledElement(idContactBtnNext, false, 'ContactBtn__Next', 'ContactForm__Button-disabled');
+      enabledBtns(idContactBtnBack, 'true');
+      enabledBtns(idContactBtnNext, 'true');
       break;
     }
 
@@ -84,8 +88,8 @@ function fillUserDataForm__Back() {
     backButtonPointer = 'mail';
     currButtonPointer = 'message';
     disabledElement(idContactFormInput, false);
-    disabledElement(idContactBtnBack, false, 'ContactBtn__Back', 'ContactForm__Button-disabled');
-    disabledElement(idContactBtnNext, false, 'ContactBtn__Next', 'ContactForm__Button-disabled');
+    enabledBtns(idContactBtnBack, 'true');
+    enabledBtns(idContactBtnNext, 'true');
     return;
   }
 
@@ -93,8 +97,8 @@ function fillUserDataForm__Back() {
     idContactFormInput.value = userDataObj['email'];
     backButtonPointer = 'name';
     currButtonPointer = 'email';
-    disabledElement(idContactBtnBack, false, 'ContactBtn__Back', 'ContactForm__Button-disabled');
-    disabledElement(idContactBtnNext, false, 'ContactBtn__Next', 'ContactForm__Button-disabled');
+    enabledBtns(idContactBtnBack, 'true');
+    enabledBtns(idContactBtnNext, 'true');
     return;
   }
 
@@ -102,8 +106,8 @@ function fillUserDataForm__Back() {
     idContactFormInput.value = userDataObj['name'];
     backButtonPointer = '';
     currButtonPointer = 'name';
-    disabledElement(idContactBtnBack, true, 'ContactForm__Button-disabled', 'ContactBtn__Back');
-    disabledElement(idContactBtnNext, false, 'ContactBtn__Next', 'ContactForm__Button-disabled');
+    enabledBtns(idContactBtnBack, 'false');
+    enabledBtns(idContactBtnNext, 'true');
     return;
   }
 }
@@ -116,7 +120,7 @@ function fillUserDataForm__Next() {
       backButtonPointer = 'name';
       currButtonPointer = 'email';
       idContactFormInput.placeholder = 'Email';
-      disabledElement(idContactBtnBack, false, 'ContactBtn__Back', 'ContactForm__Button-disabled');
+      enabledBtns(idContactBtnBack, 'true');
     }
     return;
   }
@@ -140,9 +144,8 @@ function fillUserDataForm__Next() {
       currButtonPointer = 'submit';
       idContactFormInput.placeholder = 'To complete click Submit button';
       disabledElement(idContactFormInput, true);
-      disabledElement(idContactBtnNext, true, 'ContactForm__Button-disabled', 'ContactBtn__Next');
-      disabledElement(idContactBtnSubmit, false, 'ContactBtn__Submit', 'ContactForm__Button-disabled');
-      document.querySelector('.ContactBtn__Submit').focus();
+      enabledBtns(idContactBtnNext, 'false');
+      enabledBtns(idContactBtnSubmit, 'true');
     }
     return;
   }
@@ -200,10 +203,5 @@ function openSocial(id) {
 idContactFormInput.placeholder = 'Name';
 
 // set BACK button to disabled
-disabledElement(idContactBtnBack, true, 'ContactForm__Button-disabled', 'ContactBtn__Back');
-disabledElement(idContactBtnSubmit, true, 'ContactForm__Button-disabled', 'ContactBtn__Submit');
-
-function clickTest1(btnDescriptor) {
-  btnDescriptor.setAttribute('enabled', 'true');
-  console.log(btnDescriptor.getAttribute('enabled'));
-}
+enabledBtns(idContactBtnBack, 'false');
+enabledBtns(idContactBtnSubmit, 'false');
